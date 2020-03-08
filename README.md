@@ -27,7 +27,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 Enter an artis name on Search test fild. When search button is clicked or enter button is pressed, a list of cards is displayed.
 
-![Screenshot](/assets/screenshot.png) 
+![Screenshot](/src/assets/screenshot.png) 
 
 ### Developed By
 Heidy Choque Ledezma
