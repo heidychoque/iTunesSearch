@@ -22,3 +22,12 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### How it works
+
+Enter an artis name on Search test fild. When search button is clicked or enter button is pressed, a list of cards is displayed.
+
+![Screenshot](/src/assets/screenshot.png) 
+
+### Developed By
+Heidy Choque Ledezma
