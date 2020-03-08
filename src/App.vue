@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app  id="main" :style="{background: $vuetify.theme.themes[theme].background}">
     <v-content>
       <Search/>
     </v-content>
@@ -11,7 +11,11 @@ import Search from './components/Search'
 
 export default {
   name: 'App',
-
+  computed: {
+    theme () {
+      return (this.$vuetify.theme.dark) ? 'dark' : 'light'
+    }
+  },
   components: {
     Search
   },

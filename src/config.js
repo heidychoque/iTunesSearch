@@ -1,4 +1,4 @@
 const Urls = {
-  api: 'https://itunes.apple.com/search? '
+  api: 'https://itunes.apple.com/search?'
 }
 export default Urls
