@@ -5,7 +5,7 @@
         <v-text-field label="Search" v-model="artistToSearch" single-line max-width="210" outlined clearable v-on:keyup.enter="search(artistToSearch)"></v-text-field>
       </v-col>
       <v-col  cols="1" xs="1" sm="1" md="1">
-        <v-btn icon @click="search(artistToSearch)" class="primary">
+        <v-btn icon @click="searchAlbum(artistToSearch)" class="primary">
           <v-icon>mdi-magnify</v-icon>
         </v-btn>
       </v-col>
@@ -42,7 +42,7 @@ export default {
     artistToSearch: ''
   }),
   methods: {
-    search (artistName) {
+    searchAlbum (artistName) {
       this.$store.dispatch('requestData', artistName)
     }
   }
