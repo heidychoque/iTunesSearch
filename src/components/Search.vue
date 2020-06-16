@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import Urls from '@/config.js'
+
 export default {
   mounted () {},
   computed: {
@@ -43,7 +43,7 @@ export default {
   }),
   methods: {
     search (artistName) {
-      this.$store.dispatch('requestData', Urls.api + 'term=' + artistName + '&entity=album' + '&limit=50')
+      this.$store.dispatch('requestData', artistName)
     }
   }
 }

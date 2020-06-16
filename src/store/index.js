@@ -14,8 +14,8 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    requestData (state, url) {
-      searchServices.getRequest(url)
+    requestData (state, artisName) {
+      searchServices.getRequest(artisName)
         .then(response => {
           state.commit('setSearch', response.data)
         })
